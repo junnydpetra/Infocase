@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Réplica Layout</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header class="p-2 text-bg-danger">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        <a href="mailto:email@email.com.br" class="nav-link  px-2 text-dark fs-4 text">email@email.com.br</a>
+                        <!-- <a href="mailto:email@email.com.br"><i class="fa fa-envelope-o" aria-hidden="true"></i> email@email.com.br</a> -->
+                    </li>
+                    <!-- <li>
+                        <img src="img/brasil.jpg" alt=""><a href="#">Português <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <ul>
+                            <li><img src="img/eua.jpg" alt="Logo"><a href="#">Inglês</a></li>
+                        </ul>
+                    </li> -->
+                  </ul> 
+
+                <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul> -->
+                             
+                </div>
+            </div>
+        </header>
+
+        <h1 class="text-danger text-center">Teste</h1>
+
+        <!-- Slider -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="img/sld1.png" class="d-block w-100" alt="imagem1">
+                </div>
+                <div class="carousel-item">
+                <img src="img/sld2.png" class="d-block w-100" alt="imagem2">
+                </div>
+                <div class="carousel-item">
+                <img src="img/sld3.png" class="d-block w-100" alt="imagem3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>      
+        <!-- Slider Fim -->
+
+        <footer class="bg-dark text-dark pt-5 pb-4">
+            <div class="container">
+
+                <h3 class="text-light">Sobre</h3>
+                <hr class="border border-light border-2 opacity-50">
+                <p class="text-light pt-5 pb-5 h4">
+                    Unindo a nossa experiência no mercado no futebol, a vasta rede de contatos e a habilidade dos jogadores brasileiros, guiamos craques da América Latina para ligas como Premier League, La Liga e outras grandes organizações.                    
+                </p>
+                <h3 class="text-light">Notícias</h3>
+                <hr class="border border-light border-2 opacity-50">
+                <p class="text-light pt-5 pb-5 h4">
+                    Nenhuma notícia cadastrada até o momento.                   
+                </p>
+                <h3 class="text-light">Newsletter</h3>    
+                <hr class="border border-light border-2 opacity-50">
+                <form>
+                    <div class="mb-3">
+                      <input type="name" class="form-control" id="name" placeholder="Nome">
+                      <div id="emailHelp" class="form-text"></div>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                      <div id="emailHelp" class="form-text"></div>
+                    </div>
+                    <!-- <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div> -->
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-warning btn-outline-dark border-warning" type="button">Enviar</button>
+                  </form>
+            </div>
+            <hr class="border border-light border-1">
+            <div class="container">
+                <div class="text-start">
+                    <h5 class="text-light">2023 FKA Sports. All Rights Reserved.</h5>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </body>
+</html>
