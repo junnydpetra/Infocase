@@ -9,41 +9,28 @@
     </head>
 
     <body>
-        <header class="p-2 text-bg-danger">
+        <header class="p-2 text-bg-warning">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-        
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <!-- <i class="fa fa-envelope-o" aria-hidden="true"></i> -->
-                    <li>
-                        <i class="fa-regular fa-envelope"></i>
-                        <a href="mailto:email@email.com.br" class="nav-link  px-2 text-dark fs-4 text">email@email.com.br</a>
-                        <!-- <a href="mailto:email@email.com.br"><i class="fa fa-envelope-o" aria-hidden="true"></i> email@email.com.br</a> -->
-                    </li>
-                    <!-- <li>
-                        <img src="img/brasil.jpg" alt=""><a href="#">Português <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                        <ul>
-                            <li><img src="img/eua.jpg" alt="Logo"><a href="#">Inglês</a></li>
-                        </ul>
-                    </li> -->
-                  </ul> 
-
-                <!-- <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-                    <li><a href="#" class="nav-link px-2 text-white">About</a></li>
-                </ul> -->
-                             
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">  
+                        <li>
+                            <i class="fa-regular fa-envelope"></i>
+                            <a href="mailto:email@email.com.br" class="nav-link  px-2 text-dark fs-4 text">email@email.com.br</a>
+                        </li>
+                    </ul>   
                 </div>
             </div>
         </header>
 
-        <h1 class="text-danger text-center">Teste</h1>
+        <div class="container-fluid bg-dark">
+            <div class="text-center p-5">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
+        </div>
 
         <!-- Slider -->
         <div id="carouselExampleIndicators" class="carousel slide">
@@ -73,6 +60,13 @@
             </button>
         </div>      
         <!-- Slider Fim -->
+        
+        <main>
+            <div class="container p-5">
+                <h2>Últimas notícias</h2>
+                <p>Nenhuma notícia cadastrada até o momento.</p>
+            </div>
+        </main>
 
         <footer class="bg-dark text-dark pt-5 pb-4">
             <div class="container">
@@ -96,14 +90,7 @@
                       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
                       <div id="emailHelp" class="form-text"></div>
                     </div>
-                    <!-- <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
+                    
                     <div class="d-grid gap-2">
                         <button class="btn btn-warning btn-outline-dark border-warning" type="button">Enviar</button>
                   </form>
