@@ -8,15 +8,44 @@
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
         <style>
-            .img-secundaria {
+            .anim-texto-cima-baixo {
+            position: absolute;
+            top: -100%; /* Posiciona o texto fora do slide acima */
+            left: 50%;
+            transform: translateX(-50%);
+            color: white; /* Cor do texto */
+            transition: top 1.5s ease; /* Adiciona transição para animação */
+            }
+            .carousel-item.active .anim-texto-cima-baixo,
+            .carousel-item.anim-texto-cima-baixo {
+                top: 20%; /* Move o texto para a posição inicial */
+            }
+
+            .carousel-item.active .anim-cima-baixo, /* Aplica a animação apenas quando o slide estiver ativo */
+            .carousel-item.anim-cima-baixo {
+                top: 0; /* Move a imagem secundária para a posição inicial */
+            }
+
+            .anim-left-right {
                 position: absolute;
                 top: 0;
                 left: -100%; /* Posiciona a imagem secundária fora do slide à esquerda */
-                transition: left 1.5s ease; /* Adiciona transição para animação */
+                transition: left 0.5s ease; /* Adiciona transição para animação */
             }
-            .carousel-item.active .img-secundaria {
+            .carousel-item.active .anim-left-right {
                 left: 0; /* Move a imagem secundária para a posição inicial quando o slide estiver ativo */
             }
+            .anim-right-left {
+                position: absolute;
+                top: 0;
+                right: -100%; /* Posiciona a imagem secundária fora do slide à direita */
+                transition: right 1.5s ease; /* Adiciona transição para animação */
+            }
+            .carousel-item.active .anim-right-left, /* Aplica a animação apenas quando o slide estiver ativo */
+            .carousel-item.anim-right-left {
+                right: 0; /* Move a imagem secundária para a posição inicial */
+            }
+            
         </style>
 
     </head>
@@ -39,14 +68,49 @@
             </div>
         </header>
 
-        <div class="container-fluid bg-dark py-5 px-5">
+        <div class="container-fluid bg-dark py-2 px-2">
             <div class="container px-5">
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-lg-8">
+                        <nav class="navbar navbar-expand-lg navbar-dark">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Início</h4></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Sobre</h4></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Jogadores</h4></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Galeria</h4></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Mídia Kit</h4></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><h4 class="text-light">Contato</h4></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- Slider -->
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -55,15 +119,16 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/sld1.png" class="d-block w-100" alt="imagem1">
-                    <img src="img/player.png" class="img-secundaria" alt="imagem3_secundaria">
+                    <img src="img/player.png" class="d-none d-xl-block anim-left-right" alt="imagem3_secundaria">
+                    <h1 class="anim-texto-cima-baixo">Uma jogada bem agenciada pode mudar sua história</h1>
                 </div>
                 <div class="carousel-item">
                     <img src="img/sld2.png" class="d-block w-100" alt="imagem2">
-                    <img src="img/player.png" class="img-secundaria" alt="imagem3_secundaria">
+                    <img src="img/player.png" class="d-none d-xl-block anim-left-right" alt="imagem3_secundaria">
                 </div>
                 <div class="carousel-item">
                     <img src="img/sld3.png" class="d-block w-100" alt="imagem3">
-                    <img src="img/player.png" class="img-secundaria" alt="imagem3_secundaria">
+                    <img src="img/player2.png" class="d-none d-xl-block anim-right-left" alt="imagem3_secundaria">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -74,7 +139,8 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>      
+        </div>             
+             
         <!-- Slider Fim -->
         
         <main>
