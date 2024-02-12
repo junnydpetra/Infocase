@@ -89,6 +89,18 @@
                 opacity: 1; /* Mostra o texto */
             }
 
+            .custom-placeholder {
+                font-size: 16px;
+                text-align: center;
+            }
+
+            .custom-placeholder::placeholder {
+                /* Define o tamanho da fonte e alinha verticalmente */
+                font-size: 16px;
+                line-height: 40px; /* Ajuste conforme necessário */
+                vertical-align: middle;
+            }
+
         </style>
 
     </head>
@@ -222,14 +234,15 @@
                 <hr class="border border-light border-2 opacity-50">
                 <form>
                     <div class="mb-3">
-                        <input type="name" class="form-control" id="name" placeholder="Nome">
+                        <input type="name" class="form-control rounded-0 pt-5 custom-placeholder" id="name" placeholder="Nome">
                         <div id="emailHelp" class="form-text"></div>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control rounded-0 pt-5 custom-placeholder mt-3" id="email" aria-describedby="emailHelp" placeholder="Email">
                         <div id="emailHelp" class="form-text"></div>
                     </div>
 
-                    <div class="d-grid gap-2">
-                        <button class="btn btn-warning btn-outline-dark border-warning" type="button">Enviar</button>
+                    <div class="d-grid">
+                        <button class="btn btn-warning btn-outline-dark border-warning rounded-0 pt-5 custom-placeholder" type="button">Enviar</button>
+                    </div>
                 </form>
             </div>
             <hr class="border border-light border-1">
