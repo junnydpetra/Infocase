@@ -13,23 +13,50 @@
                 filter: brightness(40%); /* Escurece as imagens */
             }
 
-            .anim-texto-cima-baixo {
+            #anim-texto-cima-baixo1-slide1 {
                 position: absolute;
                 top: -100%; /* Posiciona o texto fora do slide acima */
                 left: 40%;
                 transform: translateX(-50%);
                 color: white; /* Cor do texto */
                 transition: top 1.5s ease; /* Adiciona transição para animação */
-                font-size: 80px;
+                font-size: 70px;
             }
-            .carousel-item.active .anim-texto-cima-baixo,
-            .carousel-item.anim-texto-cima-baixo {
+            .carousel-item.active #anim-texto-cima-baixo1-slide1,
+            .carousel-item.anim-texto-cima-baixo1-slide1 {
                 top: 20%; /* Move o texto para a posição inicial */
             }
 
-            .carousel-item.active .anim-cima-baixo, /* Aplica a animação apenas quando o slide estiver ativo */
-            .carousel-item.anim-cima-baixo {
-                top: 0; /* Move a imagem secundária para a posição inicial */
+            #anim-texto-cima-baixo-slide3 {
+                position: absolute;
+                top: -100%; /* Ajuste a posição conforme necessário */
+                left: 40%;
+                transform: translateX(-50%);
+                color: white; /* Cor do texto */
+                transition: top 1.5s ease; /* Adiciona transição para animação */
+                font-size: 60px;
+            }
+            .carousel-item.active #anim-texto-cima-baixo-slide3,
+            .carousel-item.anim-texto-cima-baixo-slide3 {
+                top: 2%; /* Move o texto para a posição inicial */
+            }
+
+            /* Para o parágrafo do slide 3 */
+            #anim-p-cima-baixo-slide3 {
+                position: absolute;
+                top: -100%; /* Posiciona o texto fora do slide acima */
+                left: 50%; /* Ajuste conforme necessário */
+                transform: translate(-50%, 0);
+                color: white; /* Cor do texto */
+                transition: top 1.5s ease; /* Adiciona transição para animação */
+                font-size: 25px; /* Tamanho da fonte */
+                opacity: 0; /* Esconde o texto inicialmente */
+            }
+
+            .carousel-item.active #anim-p-cima-baixo-slide3,
+            .carousel-item.anim-p-cima-baixo-slide3 {
+                top: 40%; /* Move o texto para a posição inicial */
+                opacity: 1; /* Mostra o texto */
             }
 
             .anim-right-left {
@@ -61,16 +88,37 @@
                 left: 50%; /* Move o texto para a posição correta */
                 opacity: 1; /* Mostra o texto */
             }
+            .right-left-p-text2 {
+                position: absolute;
+                top: 30%;
+                left: 100%; /* Inicia o texto à direita */
+                transform: translate(-80%, -50%);
+                transition: left 1.5s ease; /* Adiciona a transição */
+                font-size: 25px;
+                opacity: 0; /* Esconde o texto inicialmente */
+            }
+
+            .right-left-p-text2.slide-in {
+                left: 50%; /* Move o texto para a posição correta */
+                opacity: 1; /* Mostra o texto */
+            }
 
             .facebook-icon, .twitter-icon, .google-icon, .linkedin-icon {
                 font-size: 1.2em; /* Ajuste o tamanho dos ícones conforme necessário */
                 margin-right: 1em; /* Adicione espaço entre os ícones */
             }
 
-            .small-secondary-img {
+            #secondary-img1 {
                 position: absolute; 
                 height: 90%;
                 padding-top: 2%;
+                padding-right: 15%;
+            }
+
+            #secondary-img2 {
+                position: absolute; 
+                height: 68%;
+                padding-top: 0;
                 padding-right: 15%;
             }
 
@@ -91,14 +139,24 @@
 
             .custom-placeholder {
                 font-size: 16px;
-                text-align: center;
+                font-weight: bold;
+                line-height: 3;
             }
 
-            .custom-placeholder::placeholder {
-                /* Define o tamanho da fonte e alinha verticalmente */
-                font-size: 16px;
-                line-height: 40px; /* Ajuste conforme necessário */
-                vertical-align: middle;
+            /* Para o parágrafo do slide 3 */
+            #right-left-p-text-slide3 {
+                position: absolute;
+                top: 55%;
+                left: 100%; /* Inicia o texto à direita */
+                transform: translate(-80%, -50%);
+                transition: left 1.5s ease; /* Adiciona a transição */
+                font-size: 25px; /* Tamanho da fonte */
+                opacity: 0; /* Esconde o texto inicialmente */
+            }
+
+            #right-left-p-text-slide3.slide-in {
+                left: 50%; /* Move o texto para a posição correta */
+                opacity: 1; /* Mostra o texto */
             }
 
         </style>
@@ -184,8 +242,8 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/sld1.png" class="d-block w-100" alt="imagem1">
-                    <img src="img/player.png" class="d-none d-xl-block anim-right-left small-secondary-img" alt="imagem3_secundaria">
-                    <h1 class="anim-texto-cima-baixo text-capitalize">Uma jogada bem agenciada pode mudar sua história</h1>
+                    <img src="img/player.png" class="d-none d-xl-block anim-right-left" id="secondary-img1" alt="imagem3_secundaria">
+                    <h1 class="text-capitalize" id="anim-texto-cima-baixo1-slide1">Uma jogada bem agenciada pode mudar sua história</h1>
                     <p class="right-left-p-text text-light pt-5 d-none d-xl-block">Gerenciamos carreiras de craques do futebol: Da base ao profissional, do primeiro chute ao gol da vitória. Com o comprometimento que o seu sonho merece.</p>
                 </div>
                 <div class="carousel-item">
@@ -195,7 +253,9 @@
                 </div>
                 <div class="carousel-item">
                     <img src="img/sld3.png" class="d-block w-100" alt="imagem3">
-                    <img src="img/player2.png" class="d-none d-xl-block anim-right-left" alt="imagem3_secundaria">
+                    <img src="img/player2.png" class="d-none d-xl-block anim-right-left small-secondary-img" id="secondary-img2" alt="imagem3_secundaria">
+                    <h1 class="text-capitalize" id="anim-texto-cima-baixo-slide3">A vitória é garantida para quem se dedica</h1>
+                    <p id="right-left-p-text-slide3" class="right-left-p-text text-light pt-5 d-none d-xl-block slide-in">A FKA está sempre em busca de novos talentos que querem vencer e desejam crescer mais do que seus próprios sonhos. Se você é um atleta que tem essa ambição, então a FKA é o lugar ideal para você. Acreditamos que cada atleta tem um potencial único e procuramos desenvolver esse potencial ao máximo para alcançar grandes feitos nos esportes. Acreditamos que o sucesso vem daqueles que se esforçam e estão determinados a alcançar seus objetivos. Se você é um desses atletas entre em contato conosco.</p>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -233,19 +293,20 @@
                 <h3 class="text-light">Newsletter</h3>
                 <hr class="border border-light border-2 opacity-50">
                 <form>
-                    <div class="mb-3">
-                        <input type="name" class="form-control rounded-0 pt-5 custom-placeholder" id="name" placeholder="Nome">
+                    <div>
+                        <input type="name" class="form-control custom-placeholder pb-3 mb-3" id="name" placeholder="Nome">
                         <div id="emailHelp" class="form-text"></div>
-                        <input type="email" class="form-control rounded-0 pt-5 custom-placeholder mt-3" id="email" aria-describedby="emailHelp" placeholder="Email">
+                        <input type="email" class="form-control custom-placeholder pb-3 mb-3" id="email" aria-describedby="emailHelp" placeholder="Email">
                         <div id="emailHelp" class="form-text"></div>
                     </div>
-
-                    <div class="d-grid">
-                        <button class="btn btn-warning btn-outline-dark border-warning rounded-0 pt-5 custom-placeholder" type="button">Enviar</button>
+                
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-warning btn-outline-dark border-warning custom-placeholder mb-5" type="button">Enviar</button>
                     </div>
                 </form>
+                                
             </div>
-            <hr class="border border-light border-1">
+            <hr class="border border-light border-1 mt-5">
             <div class="container">
                 <div class="text-start">
                     <h5 class="text-light">2023 FKA Sports. All Rights Reserved.</h5>
