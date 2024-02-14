@@ -35,45 +35,11 @@
             </div>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var myCarousel = document.getElementById('carouselExampleIndicators');
-                myCarousel.addEventListener('slid.bs.carousel', function () {
-                    var h1Element = document.querySelector('.carousel-item.active #anim-left-right-slide2');
-                    if (h1Element) {
-                        h1Element.classList.add('slide-in');
-                    }
-                    document.querySelectorAll('.right-left-p-text').forEach(function(text) {
-                        text.classList.remove('slide-in');
-                    });
-                    setTimeout(function() {
-                        document.querySelector('.carousel-item.active .right-left-p-text').classList.add('slide-in');
-                    }, 50);
-                });
-            });
-        </script>
-        <script>
-            // Adiciona a classe slide-in após um pequeno atraso para iniciar a animação
-            setTimeout(function() {
-                document.querySelector('.anim-left-right').classList.add('slide-in');
-            }, 100);
-        </script>
+        <script src="assets/js/event_listener.js"></script>
+        <script src="assets/js/set_timeout.js"></script>
+        <script src="assets/js/on_scroll.js"></script>
 
-        <script>
-            window.onscroll = function() {scrollFunction()};
-
-            function scrollFunction() {
-                var header = document.querySelector('header');
-                var menuNav = document.getElementById('menuNav');
-
-                if (document.body.scrollTop > header.offsetHeight || document.documentElement.scrollTop > header.offsetHeight) {
-                    menuNav.classList.add("fixed-top");
-                } else {
-                    menuNav.classList.remove("fixed-top");
-                }
-            }
-        </script>    
     </body>
 </html> 

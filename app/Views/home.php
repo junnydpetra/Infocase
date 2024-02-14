@@ -28,7 +28,7 @@
     <div class="container px-5">
         <div class="row align-items-center">
             <div class="col-lg-4">
-                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
             </div>
             <div class="col-lg-8">
                 <nav class="navbar navbar-expand-lg navbar-dark">
@@ -74,19 +74,19 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="img/sld1.jpg" class="d-block w-100" alt="imagem1">
-            <img src="img/player.png" class="d-none d-xl-block anim-right-left" id="secondary-img1" alt="imagem3_secundaria">
+            <img src="assets/img/sld1.jpg" class="d-block w-100" alt="imagem1">
+            <img src="assets/img/player.png" class="d-none d-xl-block anim-right-left" id="secondary-img1" alt="imagem3_secundaria">
             <h1 class="text-capitalize" id="anim-texto-cima-baixo1-slide1">Uma jogada bem agenciada pode mudar sua história</h1>
             <p class="right-left-p-text text-light d-none d-xl-block">Gerenciamos carreiras de craques do futebol: Da base ao profissional, do primeiro chute ao gol da vitória. Com o comprometimento que o seu sonho merece.</p>
         </div>
         <div class="carousel-item">
-            <img src="img/sld2.png" class="d-block w-100" alt="imagem2">
+            <img src="assets/img/sld2.png" class="d-block w-100" alt="imagem2">
             <h1 id="anim-left-right-slide2" class="text-capitalize text-light">Criando oportunidades e soluções <br> para atletas</h1>
             <p id="right-left-p-text-slide2" class="right-left-p-text text-light pt-5 d-none d-xl-block slide-in">É comprovado: Atletas representados por agentes têm salários melhores e contratos mais duradouros. Confie em nosso trabalho e alcance o sucesso que você merece no mundo do futebol. <br></p>
         </div>
         <div class="carousel-item">
-            <img src="img/sld3.png" class="d-block w-100" alt="imagem3">
-            <img src="img/player2.png" class="d-none d-xl-block anim-right-left small-secondary-img" id="secondary-img2" alt="imagem3_secundaria">
+            <img src="assets/img/sld3.png" class="d-block w-100" alt="imagem3">
+            <img src="assets/img/player2.png" class="d-none d-xl-block anim-right-left small-secondary-img" id="secondary-img2" alt="imagem3_secundaria">
             <h1 class="text-capitalize" id="anim-texto-cima-baixo-slide3">A vitória é garantida para quem se dedica</h1>
             <p id="right-left-p-text-slide3" class="right-left-p-text text-light pt-5 d-none d-xl-block slide-in">A FKA está sempre em busca de novos talentos que querem vencer e desejam crescer mais do que seus próprios sonhos. Se você é um atleta que tem essa ambição, então a FKA é o lugar ideal para você. Acreditamos que cada atleta tem um potencial único e procuramos desenvolver esse potencial ao máximo para alcançar grandes feitos nos esportes. Acreditamos que o sucesso vem daqueles que se esforçam e estão determinados a alcançar seus objetivos. Se você é um desses atletas entre em contato conosco.</p>
         </div>
